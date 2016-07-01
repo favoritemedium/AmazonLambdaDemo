@@ -1,0 +1,9 @@
+google_conf = {
+    'client_id': 'blahblahblah.apps.googleusercontent.com',
+    'client_secret': 'your-client-secret',
+    'token_api': 'https://accounts.google.com/o/oauth2/token',
+    'redirect_uri': 'your-oauth-callback-api',
+    'me_api': 'https://www.googleapis.com/plus/v1/people/me'
+}
+
+
