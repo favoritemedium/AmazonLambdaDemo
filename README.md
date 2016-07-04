@@ -1,6 +1,6 @@
 # Amazon Lambda Demo
 
-This demo uses Amazon Lambda to provide service.
+This demo uses Amazon Lambda and API Gateway to implement a serverless web service.
 
 The repo contains two Lambda functions, *dekki_spekki_demo* handles OAuth callback and saves user profile data into DB, while *dekki_spekki_db_count* list all database content in table format.
 
