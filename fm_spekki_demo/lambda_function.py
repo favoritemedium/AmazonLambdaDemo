@@ -9,7 +9,7 @@ print('Loading function')
 
 
 def oauth_callback(event, context):
-    dynamo_table = boto3.resource('dynamodb').Table('DekkiSpekkiDemo')
+    dynamo_table = boto3.resource('dynamodb').Table('FmSpekkiDemo')
     code = event['code']  # Param passed from URL
 
     # Exchange access_token with code
