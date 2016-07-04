@@ -2,9 +2,9 @@
 
 This demo uses Amazon Lambda and API Gateway to implement a serverless web service.
 
-The repo contains two Lambda functions, *dekki_spekki_demo* handles OAuth callback and saves user profile data into DB, while *dekki_spekki_db_count* list all database content in table format.
+The repo contains two Lambda functions, *fm_spekki_demo* handles OAuth callback and saves user profile data into DB, while *fm_spekki_db_count* list all database content in table format.
 
-## dekki_spekki_demo
+## fm_spekki_demo
 
 This Lambda function performs those actions in order:
 
@@ -53,7 +53,7 @@ This Lambda function performs those actions in order:
 
 1. Build and upload the deploy package by `make` command
 
-## dekki_spekki_db_count
+## fm_spekki_db_count
 
 This Lambda function gets all database record from related dynamo DB, and show it to user by HTML table.
 

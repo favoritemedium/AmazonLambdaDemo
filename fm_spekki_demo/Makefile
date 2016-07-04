@@ -7,5 +7,5 @@ pkg:
 	zip -g /tmp/lambda_demo.zip conf.py
 
 deploy: pkg
-	aws lambda update-function-code --function-name DekkiSpekkiDemo --zip-file fileb:///tmp/lambda_demo.zip
+	aws lambda update-function-code --function-name FmSpekkiDemo --zip-file fileb:///tmp/lambda_demo.zip
 

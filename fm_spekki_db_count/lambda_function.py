@@ -8,14 +8,14 @@ print('Loading function')
 html_scaffold = """<html>
 <head>
 <meta charset="UTF-8">
-<title>DekkiSpekkiDemo DB Records</title>
+<title>FmSpekkiDemo DB Records</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 </head>
 <body>
 <div class='container'>
 <h1 class='page-header'>
-DekkiSpekkiDemo DB Records
+FmSpekkiDemo DB Records
 </h1>
 %s
 </div>
@@ -38,7 +38,7 @@ single_table_row = '<tr><td>{}</td><td>{}</td><td>{}...</td></tr>'
 
 
 def lambda_handler(event, context):
-    dynamo_table = boto3.resource('dynamodb').Table('DekkiSpekkiDemo')
+    dynamo_table = boto3.resource('dynamodb').Table('FmSpekkiDemo')
     all_records = dynamo_table.scan()['Items']
     table_rows = []
 
